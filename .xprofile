@@ -1,0 +1,9 @@
+# 1920x1080 60Hz
+#xrandr --newmode "3440x1440_100.00"  728.00  3440 3728 4104 4768  1440 1443 1453 1527 -hsync +vsync
+#xrandr --addmode Virtual1 3440x1440_100.00
+#xrandr --output Virtual1 --mode 3440x1440_100.00
+
+# 3440x1440 60Hz
+xrandr --newmode "3440x1440_60.00"  419.50  3440 3696 4064 4688  1440 1443 1453 1493 -hsync +vsync
+xrandr --addmode Virtual1 3440x1440_60.00
+xrandr --output Virtual1 --mode 3440x1440_60.00
