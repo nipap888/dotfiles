@@ -1,0 +1,8 @@
+configuration {
+	modi: "window,drun";
+	font: "hack 16";
+	combi-modi: "window,drun";
+	icon-theme: "Papirus";
+	show-icons: true;
+ }
+@theme "android_notification"
