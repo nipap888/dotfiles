@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
+
+blocks:
+    - alignment: left
+      segments:
+        - foreground: '#7E46B6'
+          style: plain
+          template: '{{ .UserName }} '
+          type: session
+        - foreground: '#FFFFFF'
+          style: plain
+          template: 'in '
+          type: text
+        - foreground: '#87FF00'
+          style: plain
+          template: '{{ .Path }}'
+          type: path
+        - foreground: '#5FD7FF'
+          style: plain
+          template: <#ffffff> on</> {{ .HEAD }}{{ if .Staging.Changed }}<#87FF00> ● {{ .Staging.String }}</>{{ end}}{{ if .Working.Changed }}<#D75F00> ● {{ .Working.String}}</>{{ end }}
+          type: git
+        - foreground: '#D75F00'
+          style: plain
+          template: ' λ '
+          type: text
+      type: prompt
+final_space: true
+version: 2
+
